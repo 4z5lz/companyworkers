@@ -9,7 +9,7 @@ The single-page web application that shows list of company workers and their det
 
 ### Node.js and tools dependencies
 
-- Get [Node.js][node-download].
+- Install Node.js
 - Install the tool dependencies: `npm install`
 
 
