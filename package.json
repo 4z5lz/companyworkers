@@ -3,6 +3,7 @@
     "version": "1.0.0",
     "description": "Single page app that shows the list of company workers and their details",
     "main": "server.js",
+    "repository": "https://github.com/4z5lz/companyworkers.git",
     "scripts": {
         "test": "echo \"Error: no test specified\" && exit 1",
         "start": "node server.js"
