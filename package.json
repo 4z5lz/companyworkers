@@ -1,0 +1,22 @@
+{
+    "name": "company-workers",
+    "version": "1.0.0",
+    "description": "Single page app that shows the list of company workers and their details",
+    "main": "server.js",
+    "scripts": {
+        "test": "echo \"Error: no test specified\" && exit 1",
+        "start": "node server.js"
+    },
+    "author": "Alex Savenok <alexs@tikalk.com>",
+    "license": "ISC",
+    "dependencies": {
+        "body-parser": "^1.4.3",
+        "express": "^4.13.4",
+        "bower": "^1.7.9",
+        "nedb": "^1.8.0",
+        "morgan": "^1.1.1"
+    },
+    "scripts": {
+        "postinstall": "bower install"
+    }
+}

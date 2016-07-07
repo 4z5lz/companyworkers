@@ -1,0 +1,29 @@
+<md-toolbar class="md-warn">
+    <div class="md-toolbar-tools">
+        <h2 class="md-flex">Company Workers</h2>
+    </div>
+</md-toolbar>
+
+<md-content flex>
+    <md-list ng-cloak>
+        <div ng-repeat="w in list.workers">
+            <md-list-item class="noright md-2-line" 
+                          ng-init="showHint = false"
+                          ng-mouseover="showHint = true"
+                          ng-mouseleave="showHint = false"
+                          ng-click="list.goToWorkerDetails(w._id)">
+                
+                <img alt="{{w.first_name}} {{ w.last_name}}" ng-src="/assets/images/{{w.img_id}}.jpg" class="md-avatar">
+
+                <div class="md-list-item-text compact">
+                    <h3>{{w.first_name}} {{ w.last_name}}</h3>
+                    <p>{{w.position}}</p>
+                </div>
+                
+                <span class="show_details_hint" ng-hide=" ! showHint">Click to show details</span>
+                
+            </md-list-item>
+            <md-divider></md-divider>
+        </div>
+    </md-list>
+</md-content>

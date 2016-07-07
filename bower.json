@@ -1,0 +1,13 @@
+{
+    "name": "company-workers",
+    "version": "1.0.0",
+    "dependencies": {
+        "angular": "^1.5.5",
+        "angular-resource": "1.5.x",
+        "angular-route": "1.5.x",
+        "angular-animate": "^1.5.5",
+        "angular-aria": "^1.5.5",
+        "angular-messages": "^1.5.5",
+        "angular-material": "git+https://github.com/angular/bower-material.git#master"
+    }
+}

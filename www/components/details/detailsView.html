@@ -1,0 +1,74 @@
+<md-toolbar class="md-warn">
+    <div class="md-toolbar-tools">
+        <h2 class="md-flex">{{details.data.first_name}} {{details.data.last_name}} details</h2>
+    </div>
+</md-toolbar>
+
+<md-content flex>
+    <md-list ng-cloak>
+
+        <md-list-item class="noright md-2-line">
+            <img alt="{{details.data.first_name}} {{details.data.last_name}}" 
+                 ng-src="/assets/images/{{details.data.img_id}}.jpg" class="md-avatar big">
+             
+            <md-content flex>
+                <md-list>
+                    <md-list-item>
+                        <p>
+                            <strong>Position</strong>
+                        </p>
+                        <span>
+                            {{details.data.position}}
+                        </span>
+                    </md-list-item>
+                    <md-list-item>
+                        <p>
+                            <strong>Email</strong>
+                        </p>
+                        <span>
+                            {{details.data.email}}
+                        </span>
+                    </md-list-item>
+                    <md-list-item>
+                        <p>
+                            <strong>Skype</strong>
+                        </p>
+                        <span>
+                            {{details.data.skype}}
+                        </span>
+                    </md-list-item>
+                    <md-list-item>
+                        <p>
+                            <strong>Home address</strong>
+                        </p>
+                        <span>
+                            {{details.data.home_address}}
+                        </span>
+                    </md-list-item>
+                    <md-list-item>
+                        <p>
+                            <strong>Phone</strong>
+                        </p>
+                        <span>
+                            {{details.data.phone}}
+                        </span>
+                    </md-list-item>
+                    <md-list-item>
+                        <p>
+                            <strong>Birthdate</strong>
+                        </p>
+                        <span>
+                            {{details.data.birth_date | date}}
+                        </span>
+                    </md-list-item>                    
+                </md-list>
+            </md-content>
+
+        </md-list-item>
+
+
+
+    </md-list>
+</md-content>
+
+<md-button class="md-raised back_btn" ng-click="details.back()">Back</md-button>

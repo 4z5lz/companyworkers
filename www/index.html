@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+
+<html lang="en" ng-app="companyWorkersApp">
+
+    <head>
+        <meta charset="utf-8">
+        <title>Company Workers</title>
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+        <base href="/">
+
+        <!-- TODO: combine & minify css files for better performance (gulp task) -->
+        <link rel='stylesheet' href='http://fonts.googleapis.com/css?family=Roboto:400,500,700,400italic'>
+        <link rel="stylesheet" href="bower_components/angular-material/angular-material.min.css">
+        <link rel="stylesheet" href="assets/css/app.css">
+    </head>
+
+    <body ng-cloak>
+
+        <div layout="column" layout-xs="column">
+
+            <div layout="row">
+                <div flex></div>
+                
+                <div flex>
+                    <div ng-view></div>
+                </div>
+                
+                <div flex></div>
+            </div>
+        </div>
+
+        <!-- TODO: combine & minify js files for better performance (gulp task) -->
+        <script src="bower_components/angular/angular.min.js"></script>        
+        <script src="bower_components/angular-resource/angular-resource.min.js"></script>
+        <script src="bower_components/angular-route/angular-route.min.js"></script>
+        <script src="bower_components/angular-animate/angular-animate.min.js"></script>
+        <script src="bower_components/angular-aria/angular-aria.min.js"></script>
+        <script src="bower_components/angular-material/angular-material.min.js"></script>
+
+        <script src="app.config.js"></script>
+        <script src="components/list/listModel.js"></script>
+        <script src="components/list/listController.js"></script>
+        <script src="components/details/detailsModel.js"></script>
+        <script src="components/details/detailsController.js"></script>
+
+    </body>
+</html>
